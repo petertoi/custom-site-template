@@ -10,4 +10,10 @@ server {
     set          $upstream {upstream};
 
     include      /etc/nginx/nginx-wp-common.conf;
+
+#    location ~ ^/wp-content/uploads/(.*) {
+#        if (!-f $request_filename) {
+#            rewrite ^/wp-content/uploads/(.*)$ https://www.chudleighs.com/wp-content/uploads/$1 redirect;
+#        }
+#    }
 }

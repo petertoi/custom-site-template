@@ -13,7 +13,7 @@ server {
 
 #    location ~ ^/wp-content/uploads/(.*) {
 #        if (!-f $request_filename) {
-#            rewrite ^/wp-content/uploads/(.*)$ https://www.chudleighs.com/wp-content/uploads/$1 redirect;
+#            rewrite ^/wp-content/uploads/(.*)$ LIVE_URL/wp-content/uploads/$1 redirect;
 #        }
 #    }
 }
